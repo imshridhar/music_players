@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="music player">
+    <meta name="keywords" content="music, songs">
+    <meta name="author" content="shridhar">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu-side">
+            <div class="logo">
+                <img src="./music-png-logo-2.png" alt="">
+                <h1>Sarigam</h1>
+            </div>
+            <div class="playlist">
+                <h4 class="active"><span></span><i class="bi bi-music-note-beamed"></i>Favorite</h4>
+            </div>
+            <div class="menu-song">
+                <li class="songitem">
+                    <span>01</span>
+                    <img src="./covers/21.jpg" alt="">
+                    <h5>Honton Mein Aisi Baat Main <br>
+                        <div class="subtitle">Vishnuvardhan</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                </li>
+                <li class="songitem">
+                    <span>02</span>
+                    <img src="./covers/22.jpg" alt="">
+                    <h5>Piya Tu Ab To Aaja <br>
+                        <div class="subtitle">All Ok</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="2"></i>
+                </li>
+                <li class="songitem">
+                    <span>03</span>
+                    <img src="./covers/1.jpg" alt="">
+                    <h5>Ke Pag Ghungaroo Baandh <br>
+                        <div class="subtitle">All Ok</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="3"></i>
+                </li>
+                <li class="songitem">
+                    <span>04</span>
+                    <img src="./covers/2.jpg" alt="">
+                    <h5>I Am A Disco Dancer <br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songitem">
+                    <span>05</span>
+                    <img src="./covers/3.jpg" alt="">
+                    <h5>Pyar Kiya To Darna Kya <br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="5"></i>
+                </li>
+                <li class="songitem">
+                    <span>06</span>
+                    <img src="./covers/4.jpg" alt="">
+                    <h5> Humko Aaj Kal Hai Intezaar<br>
+                        <div class="subtitle">All Ok</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="6"></i>
+                </li>
+                <li class="songitem">
+                    <span>07</span>
+                    <img src="./covers/5.jpg" alt="">
+                    <h5>Ankhiyan Milaoon Kabhi Ankhiya<br>
+                        <div class="subtitle">Neha Kakkar</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="7"></i>
+                </li>
+                <li class="songitem">
+                    <span>08</span>
+                    <img src="./covers/6.jpg" alt="">
+                    <h5> Yaara O Yaara Milna Hamara<br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="8"></i>
+                </li>
+                <li class="songitem">
+                    <span>09</span>
+                    <img src="./covers/7.jpg" alt="">
+                    <h5>Dola Re Dola <br>
+                        <div class="subtitle">Sonu Nigam</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="9"></i>
+                </li>
+                <li class="songitem">
+                    <span>10</span>
+                    <img src="./covers/8.jpg" alt="">
+                    <h5>Khaike Paan Banaraswala <br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="10"></i>
+                </li>
+                <li class="songitem">
+                    <span>11</span>
+                    <img src="./covers/4.jpg" alt="">
+                    <h5> Humko Aaj Kal Hai Intezaar<br>
+                        <div class="subtitle">All Ok</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="6"></i>
+                </li>
+                <li class="songitem">
+                    <span>12</span>
+                    <img src="./covers/6.jpg" alt="">
+                    <h5> Yaara O Yaara Milna Hamara<br>
+                        <div class="subtitle">Alan Walker</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="8"></i>
+                </li>
+                <li class="songitem">
+                    <span>13</span>
+                    <img src="./covers/3.jpg" alt="">
+                    <h5>Pyar Kiya To Darna Kya <br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="5"></i>
+                </li>
+                <li class="songitem">
+                    <span>14</span>
+                    <img src="./covers/2.jpg" alt="">
+                    <h5>I Am A Disco Dancer <br>
+                        <div class="subtitle">Arjit Singh</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="4"></i>
+                </li>
+                <li class="songitem">
+                    <span>15</span>
+                    <img src="./covers/5.jpg" alt="">
+                    <h5>Ankhiyan Milaoon Kabhi Ankhiya<br>
+                        <div class="subtitle">Neha Kakkar</div>
+                    </h5>
+                    <i class="bi playlistplay bi-play-circle-fill" id="7"></i>
+                </li>
+            </div>
+        </div>
+        <div class="song-side">
+            <div id="nav">
+                <ul>
+                    <li>Music</li>
+                    <li>Radio</li>
+                </ul>
+                <div class="search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Search Music..">
+                </div>
+                <ul>
+                    <li> Language 
+                    <ul class="dropdown">
+                        <li><a href="#english">English</a></li>
+                        <li><a href="#hindi">Hindi</a></li>
+                        <li><a href="#marathi">Marathi</a></li>
+                        <li><a href="#kannada">Kannada</a></li>
+                    </ul>
+                </li>
+                </ul>
+            </div>
+            <div id="english">
+            <div class="popular-song">
+                <div class="h4">
+                    <h4>English-Popular-Song</h4>
+                </div>
+                <div class="pop-song">
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/1.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Aaja Nachle <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/3.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Yeh Jawaani Hai Deewani <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/4.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Prem Ratan Dhan Payo <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/21.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Bajirao Mastani <br>
+                            <div class="subtitle">sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/6.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5><abbr title="All Ok">Aaj Humaare Dil Mein</abbr><br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/1.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Hum Aapke Hain Koun <br>
+                            <div class="subtitle">Sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/7.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Joote De Do Paise Le Lo <br>
+                            <div class="subtitle">Neha Kakkar</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/9.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Sunoji Dulhan <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/8.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Kudiye Di Kurti <br>
+                            <div class="subtitle">Sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/2.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Kabira Encore<br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/1.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>London Thumakda <br>
+                            <div class="subtitle">Arjit Singh</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <div class="popular-artist">
+                <div class="h4">
+                    <h4>English-Popular-Artists</h4>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="https://facts.net/wp-content/uploads/2022/04/female-singer-2048x1365.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://img.musicianbio.org/main/images/0000706266_Grace_Potter/0000706266_Grace_Potter_1.jpg"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/04/arijit-singh-1.jpg?resize=1068%2C601&ssl=1"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/22.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.40pcULp8seSSbhW3eFHkQQHaEK?pid=ImgDet&rs=1" alt="">
+                    </li>
+                    <li>
+                        <img src="https://static.toiimg.com/thumb/msid-75595883,width-800,height-600,resizemode-75,imgsize-132091,pt-32,y_pad-40/75595883.jpg"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/21.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://facts.net/wp-content/uploads/2022/04/female-singer-2048x1365.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/22.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/04/arijit-singh-1.jpg?resize=1068%2C601&ssl=1"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.EWmOIChuQOV403Q_Yr-wbgHaHZ?pid=ImgDet&rs=1" alt="">
+                    </li>
+                    <li>
+                        <img src="https://images.news18.com/kannada/uploads/2020/02/WAVftwZK_400x400.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://kannada.filmibeat.com/img/2017/06/21-1498056054-1.jpg" alt="">
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div id="hindi">
+            <div class="popular-song">
+                <div class="h4">
+                    <h4>Hindi-Popular-Song</h4>
+                </div>
+                <div class="pop-song">
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://c.saavncdn.com/artists/Sunidhi_Chauhan_500x500.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Aaja Nachle <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://th.bing.com/th/id/OIP.jQ5aoOgydlk7R3FcPE7zEAHaIO?pid=ImgDet&rs=1" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Yeh Jawaani Hai Deewani <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://th.bing.com/th/id/OIP.0AbfbZujDcY18QERRew40AHaFJ?pid=ImgDet&rs=1" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Prem Ratan Dhan Payo <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://th.bing.com/th/id/OIP.mP9S9dnTGHKWLS6femNB5QHaHa?pid=ImgDet&rs=1" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Bajirao Mastani <br>
+                            <div class="subtitle">sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://2.bp.blogspot.com/-OD4qrdSTTDA/WBLVFwonn6I/AAAAAAAAAtw/XTgLnGa3dIQm3ARRwpBSFNzQmT_GhHz6QCLcB/s1600/Singer%2BShaan%2BHD%2BPictures.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5><abbr title="shridhar">Aaj Humaare Dil Mein</abbr><br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://popularinside.com/wp-content/uploads/2021/08/Prakruti-Mishra-Image.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Hum Aapke Hain Koun <br>
+                            <div class="subtitle">Sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/4.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Joote De Do Paise Le Lo <br>
+                            <div class="subtitle">Neha Kakkar</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/9.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Sunoji Dulhan <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/8.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Kudiye Di Kurti <br>
+                            <div class="subtitle">Sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/2.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Kabira Encore<br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/1.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>London Thumakda <br>
+                            <div class="subtitle">Arjit Singh</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <div class="popular-artist">
+                <div class="h4">
+                    <h4>Hindi-Popular-Artists</h4>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="https://facts.net/wp-content/uploads/2022/04/female-singer-2048x1365.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://img.musicianbio.org/main/images/0000706266_Grace_Potter/0000706266_Grace_Potter_1.jpg"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/04/arijit-singh-1.jpg?resize=1068%2C601&ssl=1"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/22.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.40pcULp8seSSbhW3eFHkQQHaEK?pid=ImgDet&rs=1" alt="">
+                    </li>
+                    <li>
+                        <img src="https://static.toiimg.com/thumb/msid-75595883,width-800,height-600,resizemode-75,imgsize-132091,pt-32,y_pad-40/75595883.jpg"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/21.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://facts.net/wp-content/uploads/2022/04/female-singer-2048x1365.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/22.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/04/arijit-singh-1.jpg?resize=1068%2C601&ssl=1"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.EWmOIChuQOV403Q_Yr-wbgHaHZ?pid=ImgDet&rs=1" alt="">
+                    </li>
+                    <li>
+                        <img src="https://images.news18.com/kannada/uploads/2020/02/WAVftwZK_400x400.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://kannada.filmibeat.com/img/2017/06/21-1498056054-1.jpg" alt="">
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div id="marathi">
+            <div class="popular-song">
+                <div class="h4">
+                    <h4>Marathi-Popular-Song</h4>
+                </div>
+                <div class="pop-song">
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://th.bing.com/th/id/R.6f1c8a585f18726727e96339da42b824?rik=cjeqr0Jej%2beM%2bg&riu=http%3a%2f%2fwww.okeasylife.com%2fwp-content%2fuploads%2f2018%2f11%2fSavani-Ravindra.jpg&ehk=F1vA1Xn7iOlW533AElsDIiHbwtcef%2bB3zCJgk4%2bTPbU%3d&risl=&pid=ImgRaw&r=0" alt="">
+                            <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS15VVAqjAGPytJoOKS1eso3W_TzYbU67fXGJhH1Nx4MWWFYE2UE9TsRN_t9jB5bOViVpQ&usqp=CAU" alt=""> -->
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Aaja Nachle <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://th.bing.com/th/id/OIP.YOqI5enLo36rVgPursiD9AHaLG?pid=ImgDet&w=4912&h=7360&rs=1" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Yeh Jawaani Hai Deewani <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://i.pinimg.com/originals/6d/c4/a6/6dc4a6bcc234da3126c8db74cc8ea859.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Prem Ratan Dhan Payo <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://th.bing.com/th/id/OIP.TmgT1BKA2C11X866lTdwlQHaEH?pid=ImgDet&rs=1" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Bajirao Mastani <br>
+                            <div class="subtitle">sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://static.toiimg.com/photo/48424262.cms" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5><abbr title="shridhar">Aaj Humaare Dil Mein</abbr><br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://cdn1.marathistars.com/wp-content/uploads/2015/03/Sonu-Nigam-.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Hum Aapke Hain Koun <br>
+                            <div class="subtitle">Sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/3.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Joote De Do Paise Le Lo <br>
+                            <div class="subtitle">Neha Kakkar</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/9.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Sunoji Dulhan <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/8.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Kudiye Di Kurti <br>
+                            <div class="subtitle">Sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/2.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Kabira Encore<br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/1.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>London Thumakda <br>
+                            <div class="subtitle">Arjit Singh</div>
+                        </h5>
+                    </li>
+                </div>
+            </div>
+            <div class="popular-artist">
+                <div class="h4">
+                    <h4>Marathi-Popular-Artists</h4>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="https://facts.net/wp-content/uploads/2022/04/female-singer-2048x1365.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://img.musicianbio.org/main/images/0000706266_Grace_Potter/0000706266_Grace_Potter_1.jpg"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/04/arijit-singh-1.jpg?resize=1068%2C601&ssl=1"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/22.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.40pcULp8seSSbhW3eFHkQQHaEK?pid=ImgDet&rs=1" alt="">
+                    </li>
+                    <li>
+                        <img src="https://static.toiimg.com/thumb/msid-75595883,width-800,height-600,resizemode-75,imgsize-132091,pt-32,y_pad-40/75595883.jpg"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/21.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://facts.net/wp-content/uploads/2022/04/female-singer-2048x1365.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/22.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/04/arijit-singh-1.jpg?resize=1068%2C601&ssl=1"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.EWmOIChuQOV403Q_Yr-wbgHaHZ?pid=ImgDet&rs=1" alt="">
+                    </li>
+                    <li>
+                        <img src="https://images.news18.com/kannada/uploads/2020/02/WAVftwZK_400x400.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://kannada.filmibeat.com/img/2017/06/21-1498056054-1.jpg" alt="">
+                    </li>
+                </div>
+            </div>
+        </div>
+        <div id="kannada">
+            <div class="popular-song">
+                <div class="h4">
+                    <h4>Kannada-Popular-Song</h4>
+                </div>
+                <div class="pop-song">
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://nettv4u.com/fileman/Uploads/Other-Language-Singers-in-Sandalwood/spb.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Aaja Nachle <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://nettv4u.com/fileman/Uploads/Other-Language-Singers-in-Sandalwood/shreya.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Bajirao Mastani <br>
+                            <div class="subtitle">sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://th.bing.com/th/id/OIP.lDvb4up_fohBPBhQfZWl2gHaE8?pid=ImgDet&rs=1" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Yeh Jawaani Hai Deewani <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://www.aiming.in/wp-content/uploads/2017/01/K-S-Chithra-Image-Free-Download.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Prem Ratan Dhan Payo <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="https://th.bing.com/th/id/OIP.E_8YTFPMI2IZFaXe_w_dAgHaHa?w=168&h=180&c=7&r=0&o=5&pid=1.7" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5><abbr title="shridhar">Aaj Humaare Dil Mein</abbr><br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="http://2.bp.blogspot.com/_gfZVzlh-CxI/SegrCRmWHHI/AAAAAAAAD0k/_LywXiya9Wc/w1200-h630-p-k-no-nu/shreya+ghoshal.bmp" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Hum Aapke Hain Koun <br>
+                            <div class="subtitle">Sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/2.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Joote De Do Paise Le Lo <br>
+                            <div class="subtitle">Neha Kakkar</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/9.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Sunoji Dulhan <br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/8.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Kudiye Di Kurti <br>
+                            <div class="subtitle">Sonu Nigam</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/2.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>Kabira Encore<br>
+                            <div class="subtitle">All Ok</div>
+                        </h5>
+                    </li>
+                    <li class="songitem">
+                        <div class="img-play">
+                            <img src="./covers/1.jpg" alt="">
+                            <i class="bi playlistplay bi-play-circle-fill" id="1"></i>
+                        </div>
+                        <h5>London Thumakda <br>
+                            <div class="subtitle">Arjit Singh</div>
+                        </h5>
+                    </li>
+            </div>
+            <div class="popular-artist">
+                <div class="h4">
+                    <h4>Kannada-Popular-Artists</h4>
+                </div>
+                <div class="item">
+                    <li>
+                        <img src="https://facts.net/wp-content/uploads/2022/04/female-singer-2048x1365.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://img.musicianbio.org/main/images/0000706266_Grace_Potter/0000706266_Grace_Potter_1.jpg"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/04/arijit-singh-1.jpg?resize=1068%2C601&ssl=1"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/22.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.40pcULp8seSSbhW3eFHkQQHaEK?pid=ImgDet&rs=1" alt="">
+                    </li>
+                    <li>
+                        <img src="https://static.toiimg.com/thumb/msid-75595883,width-800,height-600,resizemode-75,imgsize-132091,pt-32,y_pad-40/75595883.jpg"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/21.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://facts.net/wp-content/uploads/2022/04/female-singer-2048x1365.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="./covers/22.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://i0.wp.com/chd.in/wp-content/uploads/2018/04/arijit-singh-1.jpg?resize=1068%2C601&ssl=1"
+                            alt="">
+                    </li>
+                    <li>
+                        <img src="https://th.bing.com/th/id/OIP.EWmOIChuQOV403Q_Yr-wbgHaHZ?pid=ImgDet&rs=1" alt="">
+                    </li>
+                    <li>
+                        <img src="https://images.news18.com/kannada/uploads/2020/02/WAVftwZK_400x400.jpg" alt="">
+                    </li>
+                    <li>
+                        <img src="https://kannada.filmibeat.com/img/2017/06/21-1498056054-1.jpg" alt="">
+                    </li>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+        <div class="master-play">
+
+            <img src="./playing.gif" alt="">
+            <!-- <img src="./covers/1.jpg" alt="" id="poster-master-play"> -->
+            <h5 id="title">
+                Dont Worry All Ok
+                <div class="subtitle">All Ok</div>
+            </h5>
+            <div class="icon">
+                <i class="bi shuffle bi-music-note-beamed">next</i>
+                <!-- <i class="bi bi-shuffle"></i> -->
+                <i class="bi bi-skip-start-fill"></i>
+                <i class="bi bi-skip-end-fill"></i>
+                <i class="bi bi-repeat-1" id="download-music"></i>
+            </div>
+            <div class="music-control">
+                <audio controls
+                    src="./songs/krishna-adharam-madhuram-ringtone-adharam-madhuram-bgm-ringtone-mobile.mp3"></audio>
+            </div>
+        </div>
+    </header>
+</body>
+
+</html>
